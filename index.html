@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css" type="text/css">
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container-logo-alura">
+                <a class="a-logo-alura" href="https://www.aluracursos.com" target="_blank"><img class="logo-alura" src="assets/Logo.png" alt="logo de alura."></a>
+            </div>
+                <a href="" target="_self"><h1 class="titulo-principal">Encriptador de Mensajes</h1></a>
+        </header>
+        <main>
+            <!--Seccion encriptar-->
+            <section class="container-encriptar">
+                <div class="container-ingresar">
+                    <div class="advertencia">
+                        <h6>Solo letras minúsculas y sin acentos.</h6>
+                    </div>
+                    <div class="container-textarea-encriptar">
+                        <textarea class="texto-encriptar" id="texto-encriptar" type="text" 
+                        cols="80" rows="25" placeholder="Ingrese el texto aquí..." autofocus="false"></textarea>
+                    </div>
+                    <div class="btns-herramientas">
+                        <button class="btn" id="btn-borrar-1" type="button" value="Borrar">Borrar</button>
+                    </div>
+                    <div class="btns-inputs">
+                        <button class="btn" id="btn-encriptar" type="button" value="Encriptar">Encriptar</button>
+                        <button class="btn" id="btn-desencriptar" type="button" value="Desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+          
+            <!--Seccion desencriptar-->
+            <section class="container-desencriptar">
+                <div class="container-resultado">
+                    <div class="container-cubierta" id="cubierta">
+                        <img id="image-1" src="assets/Muñecoimagen.png" alt="image-1">
+                        <p class="mensage-1">Ningún mensaje fue encontrado</p>
+                        <p class="mensage-2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div class="container-textarea-desencriptar">
+                        <textarea class="texto-desencriptar" id="texto-desencriptar" type="text" 
+                        cols="40" rows="25" placeholder="No deberías de estar viendo este mensaje xd"></textarea>
+                    </div>
+                    <div class="btns-herramientas" id="btns-herramientas">
+                        <button class="btn" id="btn-copiar" type="button" value="Copiar">Copiar</button>
+                        <button class="btn" id="btn-borrar-2" type="button" value="Borrar">Borrar</button>
+                    </div>
+                </div>
+            </section>
+            <!--Footer-->
+            <footer>
+                <section class="footer">
+                    <div class="footer-logo">
+                        <p>DESARROLLADO POR LUFHOLGUINVI</p>
+                       
+                        <a class="a-logo-social-media" href="https://www.linkedin.com/in/lufholguinvi/?_l=es_ES" target="_blank"><img class="logo-social-media" id="logo-linkedin" src="assets/linkedin.png" alt="logo-linkedIn"></a>
+                        <a class="a-logo-social-media" href="https://github.com/lufholguinvi" target="_blank"><img class="logo-social-media" id="logo-github" src="assets/github.png" alt="logo-github"></a>
+                    </div>
+                </section>
+            </footer>
+        </main>
+        <script src="encriptar.js" type="text/javascript"></script>
+        <script src="funtions.js" type="text/javascript" ></script>
+    
+    </body>
+</html>
